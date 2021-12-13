@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        # run: echo Hello, world!
         # run: curl https://path/to/file -o path/to/save
         run: curl https://partner.exploregeorgia.org/api/export/camera-ready?output=json&client=cameraready&key=XV3DSxsk -o cameraready.json
 
