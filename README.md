@@ -1,1 +1,1 @@
-# cameraready_locations_cURL
+# cameraready_locations_curl
