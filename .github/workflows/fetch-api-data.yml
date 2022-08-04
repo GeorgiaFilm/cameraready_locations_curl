@@ -1,3 +1,7 @@
+# Controls when the workflow will run
+on:
+  schedule:
+      - cron:  '0 11 * * *' # 11am daily. Ref https://crontab.guru/examples.html
 uses: gautemo/fetch-api-data-action@1.0.2
 with:
   url: 'https://fake-movie-database-api.herokuapp.com/api?s=batman'
