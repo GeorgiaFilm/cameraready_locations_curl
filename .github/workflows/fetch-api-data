@@ -1,4 +1,4 @@
 uses: gautemo/fetch-api-data-action@1.0.2
 with:
   url: 'https://fake-movie-database-api.herokuapp.com/api?s=batman'
-  file: 'backup/data.json'
+  file: 'batman.json'
