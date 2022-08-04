@@ -13,6 +13,6 @@ jobs:
     steps:
       - name: Fetch Data
         uses:
-        with:
-          url: 'https://fake-movie-database-api.herokuapp.com/api?s=batman'
-          file: 'batman.json'
+          with:
+            url: 'https://fake-movie-database-api.herokuapp.com/api?s=batman'
+            file: 'batman.json'
