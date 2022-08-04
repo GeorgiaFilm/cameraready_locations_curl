@@ -1,5 +1,6 @@
 # BUG - Commit changes is saving [object Object]
-# Try Flat Data instead https://github.com/marketplace/actions/flat-data
+# Alternative flat-data.yml works! https://github.com/marketplace/actions/flat-data
+# get_file.yml also works. Uses curl.
 
 # Controls when the workflow will run
 on:
