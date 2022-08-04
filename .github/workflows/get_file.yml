@@ -31,11 +31,18 @@ jobs:
       - name: Run a one-line script
         # run: echo Hello, world!
         # run: curl https://path/to/file -o path/to/save
-        # Doesn't work for scrap. Try: https://next.github.com/projects/flat-data
-        # run: curl https://partner.exploregeorgia.org/api/export/camera-ready?output=json&client=cameraready&key=XV3DSxsk -o cameraready.json
+
+        # Also check out "Flat Data" by GitHub Next.
+        # Simple way to fetch data from two kinds of sources: any HTTP endpoint, or a SQL query against a supported datastore. 
+        # https://next.github.com/projects/flat-data
+
+        # Quotes are requited since URL contains &
+        run: curl "https://partner.exploregeorgia.org/api/export/camera-ready?output=json&client=cameraready&key=XV3DSxsk" -o cameraready.json
+        
         # Works
         # run: curl https://model.earth/io/build/api/sectorcrosswalk.csv -o sectorcrosswalk.csv
-        run: curl https://data.alltheplaces.xyz/runs/2021-12-11-13-32-30/output.tar.gz -o alltheplaces.tar.gz
+        # Works
+        # run: curl https://data.alltheplaces.xyz/runs/2021-12-11-13-32-30/output.tar.gz -o alltheplaces.tar.gz
 
       # Runs a set of commands using the runners shell
       #- name: Run a multi-line script
@@ -50,5 +57,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add -A
           timestamp=$(date -u)
-          git commit -m "Updated scraped data: ${timestamp}" || exit 0
+          git commit -m "Updated pulled cameraready location data: ${timestamp}" || exit 0
           git push
