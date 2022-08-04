@@ -1,3 +1,6 @@
+# BUG - Commit changes is saving [object Object]
+# Try Flat Data instead https://github.com/marketplace/actions/flat-data
+
 # Controls when the workflow will run
 on:
   schedule:
@@ -14,12 +17,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+
       - name: Fetch Data
         uses: gautemo/fetch-api-data-action@1.0.2
         with:
           url: 'https://fake-movie-database-api.herokuapp.com/api?s=batman'
           file: 'batman.json'
+
       - name: Commit changes
         run: |
           git config user.name "Automated fetch commit."
