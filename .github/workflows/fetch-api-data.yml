@@ -9,7 +9,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     steps:
-      -uses:
+      uses:
         with:
           url: 'https://fake-movie-database-api.herokuapp.com/api?s=batman'
           file: 'batman.json'
