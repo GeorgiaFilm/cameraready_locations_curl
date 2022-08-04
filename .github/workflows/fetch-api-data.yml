@@ -8,6 +8,8 @@ uses: gautemo/fetch-api-data-action@1.0.2
 jobs:
   # This workflow contains a single job called "build"
   build:
-    with:
-      url: 'https://fake-movie-database-api.herokuapp.com/api?s=batman'
-      file: 'batman.json'
+    steps:
+      -uses:
+        with:
+          url: 'https://fake-movie-database-api.herokuapp.com/api?s=batman'
+          file: 'batman.json'
