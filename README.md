@@ -1,5 +1,7 @@
 # GitHub Action Workflows
 
+Moving to data-pipeline/experiments.
+
 There are 3 workflow samples here in [.github/workflows](tree/main/.github/workflows).  
 
 1. flat-data.yml uses githubocto/flat@v3 to get batmanflat.json
