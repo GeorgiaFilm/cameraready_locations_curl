@@ -1,4 +1,4 @@
-# cameraready_locations_curl
+# GitHub Action Workflows
 
 There are 3 workflow samples here in [.github/workflows](tree/main/.github/workflows).  
 
