@@ -4,9 +4,9 @@ Moving to data-pipeline/experiments.
 
 There are 3 workflow samples here in [.github/workflows](tree/main/.github/workflows).  
 
-1. flat-data.yml uses githubocto/flat@v3 to get batmanflat.json
-2. get_file.yml pulls using curl to get cameraready.json for the [CameraReady map](https://map.georgia.org/localsite/map/#show=cameraready&state=GA).  
-3. fetch-api-data.yml uses fetch-api-data-action to get batman.json (BUG! saves [object Object])
+1. flat-data.yml workflow uses githubocto/flat@v3 to get batmanflat.json (Batman API became unavailable fall 2022, so disabled Action by clicking Flat's 3-dot menu)
+2. get_file.yml workflow pulls using curl to get cameraready.json for the [CameraReady map](https://map.georgia.org/localsite/map/#show=cameraready&state=GA).  
+3. fetch-api-data.yml workflow uses fetch-api-data-action to get batman.json (BUG! saves [object Object])
 
 
 ## Build from source
