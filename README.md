@@ -1,7 +1,5 @@
 # GitHub Action Workflows
 
-Moving to data-pipeline/experiments.
-
 There are 3 workflow samples here in [.github/workflows](tree/main/.github/workflows).  
 
 1. flat-data.yml workflow uses githubocto/flat@v3 to get batmanflat.json (Batman API became unavailable fall 2022, so disabled Action by clicking Flat's 3-dot menu)
@@ -31,5 +29,8 @@ Use this sample of including a Python script in GitHub Actions:
 
 https://github.com/abrie/atl-council-scraper
 
-We can run our comtrade script to populate folders for each country:
+Volunteer project:  
+Aiming to have a UN comtrade script populate folders for each country:
 https://github.com/modelearth/data-pipeline/tree/main/international/comtrade
+
+Also see [data-pipeline/experiments](https://model.earth/data-pipeline/experiments/)
