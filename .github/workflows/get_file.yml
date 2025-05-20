@@ -37,7 +37,8 @@ jobs:
         # https://next.github.com/projects/flat-data
 
         # Quotes are requited since URL contains &
-        run: curl "https://partner.exploregeorgia.org/api/export/camera-ready?output=json&client=cameraready&key=XV3DSxsk" -o cameraready.json
+        # Prior to May 2025 used partner.exploregeorgia.org
+        run: curl "https://ga.extranet.milespartnership.com/api/export/camera-ready?output=json&client=cameraready&key=XV3DSxsk" -o cameraready.json
         
         # Works
         # run: curl https://model.earth/io/build/api/sectorcrosswalk.csv -o sectorcrosswalk.csv
